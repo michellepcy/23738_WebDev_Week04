@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		.klik1{
+			height: 40px;
+			width: 200px;
+			background-color: lightblue;
+		}
+		.klik2{
+			height: 40px;
+			width: 200px;
+			background-color: lightblue;
+		}
+	</style>
+	<title> Ganjil-Genap
+	</title>
+</head>
+<style type="text/css"></style>
+<body>
+	<script type=></script>
+<h1>Program Menentukan Ganjil-Genap Sebuah Angka</h1>
+<hr>
+<h2>
+<div> Riwayat Input Angka-Hasil : </h2> </div>
+
+<p id="input"></p>
+
+<button class = "klik1" onclick="MyFunction()"> Masukkan Angka Baru </button>
+
+<button class = "klik2" onclick="hapus()"> Hapus </button>
+
+<script>
+	function MyFunction(){
+	var txt;
+	var angka;
+	angka = prompt("Masukkan Angka: ");
+if (angka % 2 == 0) {
+	alert(+ angka + "Genap")
+	txt = "<p style = 'color:red'>" +  angka + " " + "Genap </p>" ;
+}
+else {
+	alert(+ angka + "Ganjil")
+	txt = "<p style = 'color:blue'>" + angka + " " + "Ganjil </p>";
+}
+	document.getElementById('input').innerHTML += txt;
+}
+function hapus(){
+	document.getElementById('input').innerHTML = "";	
+}
+
+</script>
+</body>
+</html>
